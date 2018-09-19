@@ -1,0 +1,41 @@
+body{
+    background-color: gainsboro;
+    height:2000px;
+}
+#gif-zone{
+    width:100%;
+    height:600px;
+    background-color: goldenrod;
+}
+#form-zone{
+    background-color: whitesmoke;
+    width:240px;
+    border-bottom-left-radius:15px;
+    position:absolute;
+    top:76px;
+    right:0px;
+}
+form{
+    padding:10px;
+    
+}
+#submit-button{
+    border-radius:10px;
+}
+#input-textbox{
+    width:100%;
+}
+#button-zone{
+    float:left;
+    width:100%;
+    height:76px;
+    background-color: blueviolet;
+}
+@media only screen and (max-width: 600px) {
+    #form-zone {
+        
+        width:100%;
+        border-bottom-left-radius: 0px;
+    }
+   
+}
