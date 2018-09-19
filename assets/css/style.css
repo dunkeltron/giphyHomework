@@ -17,6 +17,7 @@ form{
 }
 .image-container{
     float:left;
+    padding:5px;
 }
 #input-textbox{
     width:100%;
@@ -35,7 +36,7 @@ form{
     top:76px;
     right:0px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 740px) {
     #form-zone {        
         width:100%;
         border-bottom-left-radius: 0px;

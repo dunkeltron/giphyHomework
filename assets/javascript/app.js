@@ -38,23 +38,27 @@ $(document).on("click", ".gif-search", function (event) {
             console.log(response);
             // Saving the image_original_url property
             response.data.forEach(element => {
-                // var imgDiv = $("div");
-                // imgDiv.text("Rating: "+ response.data[i].rating)
-                // imgDiv.addClass("image-container");
+                var imgDiv = $("<div>");
+                imgDiv.addClass("image-container");
 
                 // Creating and storing an image tag
-                var imageUrl = element.images.fixed_width.url;
+                var imageUrl = element.images.fixed_height.url;
                 var image = $("<img>");
                 // Setting the catImage src attribute to imageUrl
-                image.attr("src", element.images.fixed_width_still.url);
-                image.attr("still-image",element.images.fixed_width_still.url);
+                image.attr("src", element.images.fixed_height_still.url);
+                image.attr("still-image",element.images.fixed_height_still.url);
                 image.attr("moving-image",imageUrl)
                 image.attr("moving","false");
                 image.addClass("gif");
 
-                // Prepending the catImage to the images div
-                //imgDiv.append(catImage);
-                $("#gif-zone").append(image);
+                //create and store rating text
+                var p =$("<p>");
+                p.text("Rating: "+ element.rating);
+                // Prepending the image and rating to the image div
+                imgDiv.append(p);
+                imgDiv.append(image);
+                //put the div into the gif-zone
+                $("#gif-zone").append(imgDiv);
 
             });
         });
