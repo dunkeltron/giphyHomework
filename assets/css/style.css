@@ -1,3 +1,4 @@
+/* gif display zone and body style */
 body{
     background-color: goldenrod;
     height:1200px;
@@ -7,27 +8,25 @@ body{
     height:600px;
     top:76px;
 }
-.gif-search{
-    margin-left:5px;
-    margin-right:5px;
+
+
+/*gif div section */
+.image-container{
+    float:left;
+    padding:5px;
+}
+p{
+    text-align: center;
+}
+/*submit button and form styles */
+#input-textbox{
+    width:100%;
 }
 form{
     padding:10px;
     
 }
-.image-container{
-    float:left;
-    padding:5px;
-}
-#input-textbox{
-    width:100%;
-}
-#button-zone{
-    float:left;
-    width:100%;
-    height:76px;
-    background-color: blueviolet;
-}
+
 #form-zone{
     background-color: whitesmoke;
     width:100px;
@@ -35,6 +34,17 @@ form{
     position: absolute;
     top:76px;
     right:0px;
+}
+/* search button style + search button container style */
+.gif-search{
+    margin-left:5px;
+    margin-right:5px;
+}
+#button-zone{
+    float:left;
+    width:100%;
+    height:76px;
+    background-color: blueviolet;
 }
 @media only screen and (max-width: 740px) {
     #form-zone {        
